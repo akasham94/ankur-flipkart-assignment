@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+ <html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body> 
+        <h2 style = "text-align:center">Review Section</h2> 
+        <div style = "display:flex;justify-content:left;">
+        <div id = "tabl" style = "width:30%;background-color:crimson;">
+            <p>Mobile Images</p>
+        <div onclick = "changereview('${result.id}')">
+            <img src = "http://t0.gstatic.com/images?q=tbn%3AANd9GcQ7G3d0o_nv3AC8v2ymuFjHgvgLriC3kIrg2SB0tgbjBizZD3XJTBy6W6BbPT9m7gRZkSh9W60&usqp=CAc">
+        </div>
+        <div onclick = "changereview('${result.id}')">
+            <img src = "http://t0.gstatic.com/images?q=tbn%3AANd9GcQ7G3d0o_nv3AC8v2ymuFjHgvgLriC3kIrg2SB0tgbjBizZD3XJTBy6W6BbPT9m7gRZkSh9W60&usqp=CAc">
+        </div>
+        <div onclick = "changereview('${result.id}')">
+            <img src = "http://t0.gstatic.com/images?q=tbn%3AANd9GcQ7G3d0o_nv3AC8v2ymuFjHgvgLriC3kIrg2SB0tgbjBizZD3XJTBy6W6BbPT9m7gRZkSh9W60&usqp=CAc">
+        </div>
+        </div>
+        <div style = "width:10%;background-color: darkgray;"></div>
+        <div  style = "width:60%;margin-left: 20px;">
+            <div class = "space" id = "ratings" onclick = "calcrating()">
+               <p> Rate The Product</p>
+               <span class="fa fa-star" onclick = "countstars()"></span>
+               <span class="fa fa-star" onclick = "countstars()"></span>
+               <span class="fa fa-star" onclick = "countstars()"></span>
+               <span class="fa fa-star" onclick = "countstars()"></span>
+               <span class="fa fa-star" onclick = "countstars()"></span>
+            </div>
+            <span id = "writerating"></span>
+
+            <div class = "space">
+               <p>Write review</p>
+               <textarea id="w3mission" rows="4" cols="50">             
+            </textarea>          
+            </div>
+            <button type = "submit" onclick = "Addreview()">Submit</button>
+            <p>All Review</p>
+            <div id = "Review" class = "space">
+                
+            </div>
+    </div>
+        <script src="index.js"></script>
+    </body>
+</html>
