@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
@@ -29,21 +30,22 @@
         <div  style = "width:60%;margin-left: 20px;">
             <div class = "space" id = "ratings" onclick = "calcrating()">
                <p> Rate The Product</p>
-               <span class="fa fa-star" onclick = "countstars()"></span>
-               <span class="fa fa-star" onclick = "countstars()"></span>
-               <span class="fa fa-star" onclick = "countstars()"></span>
-               <span class="fa fa-star" onclick = "countstars()"></span>
-               <span class="fa fa-star" onclick = "countstars()"></span>
+               <span class="fa fa-star" id = "1" onclick = "countstars(this.id)"></span>
+               <span class="fa fa-star" id = "2" onclick = "countstars(this.id)"></span>
+               <span class="fa fa-star" id = "3" onclick = "countstars(this.id)"></span>
+               <span class="fa fa-star" id = "4" onclick = "countstars(this.id)"></span>
+               <span class="fa fa-star" id = "5" onclick = "countstars(this.id)"></span>
+               <span id = "rate"></span>
             </div>
             <span id = "writerating"></span>
 
             <div class = "space">
                <p>Write review</p>
-               <textarea id="w3mission" rows="4" cols="50">             
+               <textarea onfocus = "abc(this.id)" id="w3mission" rows="4" cols="50">             
             </textarea>          
             </div>
             <button type = "submit" onclick = "Addreview()">Submit</button>
-            <p>All Review</p>
+            <h2>All Review</h2>
             <div id = "Review" class = "space">
                 
             </div>
